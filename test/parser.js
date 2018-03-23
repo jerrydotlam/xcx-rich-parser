@@ -11,11 +11,6 @@ describe('parse(strHtml)', function () {
     return parser
       .parse(data)
       .then(function (result) {
-        console.log('==================');
-        console.log(JSON.stringify(result));
-        console.log('==================');
-        // console.log(JSON.stringify(output));
-        // console.log('==================');
         assert(JSON.stringify(result).trim() === JSON.stringify(output).trim());
       })
   });
