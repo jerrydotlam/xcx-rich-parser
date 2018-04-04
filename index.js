@@ -71,7 +71,7 @@ function _parseNode(node, level) {
     attribs.colspan && (xnode.attrs.colspan = attribs.colspan);
     attribs.rowspan && (xnode.attrs.rowspan = attribs.rowspan);
   }
-  // 这里如果有`stackoverflow`的情况，可能要改成尾递归的方式
+  // 这里如果有`stackoverflow`的情况，可能要改成尾递归或者循环
   var children = node.children;
   if (children && children.length > 0) {
     xnode.children = _parseNodeList(children, level + 1);
