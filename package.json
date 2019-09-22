@@ -1,5 +1,5 @@
 {
-  "name": "xcx-rich-parser",
+  "name": "wx-html-parser",
   "version": "1.0.0",
   "description": "一个简单的将HTML字符串转成微信小程序富文本格式的解析器",
   "main": "index.js",
